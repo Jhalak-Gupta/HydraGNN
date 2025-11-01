@@ -12,7 +12,7 @@ from models.GCN import GCN
 from models.MLP import MLP
 from models.SAGE import SAGE
 from models.GAT import GAT
-from models.GPR import GPRGNN
+from models.GPR import GPRNet
 from poisoning.poisoning import apply_poisoning
 from defense.pruning import prune_and_restore_edges
 from defense.bayesian import bayesian_predict
@@ -28,10 +28,10 @@ def get_model(model_name, in_channels, hidden_channels, out_channels):
         return GAT(in_channels, hidden_channels, out_channels, heads=8) 
     elif model_name.lower() == 'sage':
         return SAGE(in_channels, hidden_channels, out_channels)
-    elif model_name.lower() == 'gprgnn':
-        return GPRGNN(in_channels, hidden_channels, out_channels) 
+    elif model_name.lower() == 'gpr':
+        return GPRNet(in_channels, hidden_channels, out_channels, K=10, alpha=0.1, init='PPR') 
     elif model_name.lower() == 'mlp':
-        return MLP(in_channels, out_channels) # MLP has a hardcoded hidden dim (64)
+        return MLP(in_channels, out_channels)
     else:
         raise ValueError(f"Unknown model: {model_name}")
 
