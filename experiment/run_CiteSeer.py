@@ -217,7 +217,7 @@ def run_experiment(model_name, poisoning_rate, target_class):
 
 
 if __name__ == "__main__":
-    model_names_to_run = ['gcn', 'gat', 'sage', 'gprgnn', 'mlp']
+    model_names_to_run = ['gcn', 'gat', 'sage', 'gpr', 'mlp']
     poisoning_rates = [0.01, 0.05, 0.10, 0.20, 0.50, 0.80]
     target_class = 0
     
