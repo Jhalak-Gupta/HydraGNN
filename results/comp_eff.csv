@@ -1,0 +1,6 @@
+Method,Time (sec),Memory (MiB),CPU (%)
+Edge Pruning,3.85,969.7,98.6
+Bayesian Uncertainty,4.93,970.4,96.8
+Anomaly Detection,3.85,972.9,98.8
+Randomized Smoothing,4.72,973.1,97.5
+Hybrid,16.23,942.6,99.9

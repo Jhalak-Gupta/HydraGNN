@@ -1,0 +1,7 @@
+Poisoning Rate,Clean Accuracy,Poisoned Accuracy,ASR,Edge Pruning Accuracy,Edge Pruning ASR,Bayesian Uncertainty Accuracy,Bayesian Uncertainty ASR,Anomaly Detection Accuracy,Anomaly Detection ASR,Randomized Smoothing Accuracy,Randomized Smoothing ASR,Hybrid Defense Accuracy,Hybrid Defense ASR
+1%,0.795,0.743,0.392,0.752,0.316,0.765,0.327,0.769,0.342,0.743,0.357,0.787,0.29
+5%,0.795,0.71,0.606,0.746,0.329,0.755,0.388,0.744,0.46,0.748,0.471,0.79,0.249
+10%,0.795,0.702,0.638,0.763,0.357,0.741,0.426,0.735,0.501,0.732,0.538,0.784,0.231
+20%,0.795,0.643,0.676,0.724,0.308,0.738,0.485,0.691,0.437,0.715,0.579,0.805,0.258
+50%,0.795,0.545,0.745,0.68,0.423,0.716,0.473,0.598,0.482,0.631,0.508,0.821,0.207
+80%,0.795,0.487,0.823,0.613,0.384,0.586,0.402,0.542,0.523,0.554,0.534,0.804,0.263
